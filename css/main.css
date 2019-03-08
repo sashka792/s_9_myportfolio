@@ -1,0 +1,839 @@
+/*---------- Connect Fonts ----------*/
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*---------- Specification ----------*/
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 15px;
+	color: #22241b;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 15px;
+    line-height: ;
+    margin-bottom: ;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: ;
+}
+
+h2 {
+	font-size: 37px;
+	margin-left: auto;
+	color: #22241b;
+	font-family: 'Natasha';
+	letter-spacing: .12em;
+}
+
+
+section {
+	padding-top: ;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a {
+	transition: all 0.5s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*.button {
+	display: block;
+	border: ;
+	color: ;
+	font-weight: bold;
+	font-size: ;
+	width: ;
+	padding: ;
+	border-radius: ;
+	text-align: center;
+}*/
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/*---------- First screen (Header) ----------*/
+
+.header {
+	background: #31382a url(../img/bg.jpg) no-repeat center top;
+	letter-spacing: .12em;
+	padding-top: 52px;
+	padding-bottom: 83px;
+}
+
+.menu {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.menu__logo {
+	font-size: 17px;
+	font-family: 'Museo Sans 100';
+	text-transform: uppercase;
+	/*justify-content: space-between;*/
+
+}
+
+.menu__logo b {
+	font-size: 19px;
+	font-family: 'Museo Sans 900';
+	text-transform: uppercase;
+	/*margin-right: 165px;*/
+}
+
+.menu__items {
+	width: 325px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__item {
+	font-size: 15px;
+	font-family: 'Museo Sans 900';
+	color: #fff;
+	border-bottom: 1px solid transparent; 
+	text-transform: uppercase;
+}
+
+.menu__item-link {
+	color: #fff;
+}
+
+.menu__item:hover {
+	border-bottom: 1px solid #fff;
+	transition: all 0.5s ease;
+}
+
+.menu__email {
+	width: 140px;
+	font-size: 13px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #fff;
+	transition: all 0.5s ease;
+}
+
+.menu__email:hover {
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+}
+
+.lifestyle {
+	text-align: center;
+	color: #fff;
+	margin-top: 288px;
+	margin-bottom: 258px;
+}
+
+.lifestyle__title {
+	font-size: 49px;
+	letter-spacing: .12em;
+	font-family: 'Natasha';
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.lifestyle__text {
+	font-size: 29px;
+	letter-spacing: .12em;
+	font-family: 'Museo Sans 100';
+	text-transform: uppercase;
+}
+
+.arrow-down {
+	font-size: 18px;
+	width: 38px;
+	height: 38px;
+	display: block;
+	color: #fff;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	border-radius: 50%;
+	line-height: 34px;
+	letter-spacing: -1px;
+}
+
+.arrow-down:hover {
+	background: rgba(255, 255, 255, 0.7);
+	color: #2b2e1c;
+}
+
+/*---------- Second screen (Header) ----------*/
+
+/*Бэкграунд*/
+.about-me {
+	margin-top: 83px;
+	margin-bottom: 61px;
+}
+
+.about-me__description {
+	display: flex;
+}
+
+.about-me h2 {
+	padding-bottom: 71px;
+}
+
+.background {
+	width: 50%;
+	padding-right: 30px;
+}
+
+.title {
+	font-size: 22px;
+	font-family: 'Natasha';
+	color: #888886;
+	margin-right: auto;
+	letter-spacing: .12em;
+}
+
+.background__title {
+	margin-bottom: 37px;
+}
+
+.backround__text {
+	font-size: 15px;
+	font-family: 'Museo Sans 300';
+	letter-spacing: .02em;
+	line-height: 27px;
+	padding-bottom: 27px;
+}
+
+.backround__text:last-child {
+	padding-bottom: 0;
+}
+
+.info {
+	width: 50%;
+	padding-left: 10px;
+}
+
+/*Заслуги*/
+
+.merits {
+	margin-bottom: 63px;
+}
+
+.merits__title {
+padding-bottom: 58px;
+}
+
+.merits__info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.merits__projects {
+	width: 120px;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+}
+
+.merits__stroke {
+	width: 72px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border: 1px solid #3e6534;
+	transform: rotate(45deg);
+}
+
+.merits__stroke:after {
+	content:'';
+	width: 56px;
+	height: 56px;
+	border: 1px solid #cddbc3;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.merits__num {
+	font-size: 20px;
+	font-family: 'Museo Sans 100';
+	transform: rotate(-45deg);
+}
+
+.merits__name {
+	font-size: 12px;
+	font-family: 'Museo Sans 100';
+	line-height: 1.5;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 38px;
+}
+
+/*Связь*/
+.contacts {
+
+}
+
+.contacts__title {
+	margin-bottom: 31px;
+}
+
+.contacts__info {
+	display: flex;
+}
+
+.contacts__links {
+	width: 175px;
+	font-size: 14px;
+	font-family: 'Museo Sans 300';
+}
+
+.contacts__links a {
+	color: #204d15;
+	line-height: 1.55em;
+	letter-spacing: 0.12em;
+	text-decoration: none;
+	border-bottom: 1px solid #becbbb;
+}
+
+.contacts__links li {
+	padding-left: 2px;
+	padding-bottom: 14px;
+}
+
+.contacts__links a:hover {
+	border-bottom: 1px solid transparent;
+} 
+
+.contacts__me {
+	margin-top: 30px;
+}
+
+.icon {
+	font-family: 'Stroke-Gap-Icons';
+	font-size: 25px;
+	margin-left: 37px;
+	margin-right: 20px;
+	color: #204d15;
+	background: #eef1ed;
+	border-radius: 50%;
+	padding: 19px;
+}
+
+.contacts__text {
+	font-family: 'Museo Sans 300';
+	font-size: 14px;
+	font-style: italic;
+	letter-spacing: 0.015em;
+	color: #22241b;
+	padding-top: 4px;
+}
+
+/*---------- Second screen (Навыки) ----------*/
+
+.skills {
+	margin-bottom: 81px;
+}
+.skills h2 {
+	margin-top: 90px;
+	margin-bottom: 56px;
+}
+.list {
+	display: flex;
+}
+.list__item {
+	position: relative;
+	align-items: center;
+	width: 25%;
+	display: flex;
+}
+
+.list__num {
+	width: 62px;
+	height: 62px;
+	font-size: 13px;
+	font-weight: 100;
+	line-height: 61px;
+	letter-spacing: 0.12em;
+	text-align: center;
+	color: #204d15;
+	border: 1px solid #204d15;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 26px;
+}
+
+.list__num:after {
+	content: "";
+	width: 48px;
+	height: 48px;
+	border: 1px solid #adb2ac;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.list__title {
+	color: #22241b;
+	font-size: 15px;
+	font-family: 'Museo Sans 900';
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+
+/*---------- Third screen (Работы) ----------*/
+.portfolio {
+	margin-bottom: 124px;
+}
+
+.portfolio h2 {
+	padding-bottom: 55px;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.photos__pic {
+	width: 300px;
+	transition: all 0.5s ease;
+	position: relative;
+}
+
+.photos__overlay {
+	background: rgba(0,0,0,0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photos__overlay a {
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Museo Sans 300';
+	border-bottom: 1px solid #fff;
+	padding-bottom: 2px;
+}
+
+.photos__overlay-title {
+	text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Museo Sans 900';
+    padding-bottom: 5px;
+}
+
+.photos__pic:hover .photos__overlay {
+	opacity: 1;
+}
+
+.photos__img {
+	display: block;
+	margin: 0 auto;
+}
+
+.photos__overlay-link:hover {
+	border-bottom: 1px solid transparent;
+}
+
+/*---------- Footer (Работы) ----------*/
+
+.footer p {
+	font-size: 11px;
+	font-family: 'Museo Sans 300';
+	letter-spacing: .14em;
+	text-transform: uppercase;
+	padding-bottom: 90px;
+}
+
+/*---------- Media Queries ----------*/
+/* Large 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* Medium 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+
+	.menu__items {
+		width: 275px;
+	}
+
+	.menu__item {
+		font-size: 14px;
+	}
+
+	.lifestyle {
+		margin-top: 250px;
+		margin-bottom: 200px;
+	}
+
+	.lifestyle__title {
+		font-size: 46px;
+	}
+
+	.lifestyle__text {
+		font-size: 27px;
+	}
+
+	.main-title {
+		text-align: center;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.about-me__description {
+		flex-direction: column;
+	}
+
+	.background, .info {
+		width: 100%;
+	}
+
+	.background {
+		margin-bottom: 70px;
+	}
+	
+	.merits{
+		margin-bottom: 60px;
+	}
+	.merits__title {
+    	padding-bottom: 40px;
+	}
+	.merits__projects {
+		width: 30%;
+	}
+
+	.merits__name {
+		width: 60%;
+	}
+
+	.contacts__info {
+		justify-content: space-around;
+	}
+
+	.list {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.list__item {
+		width: 35%;
+		margin-bottom: 30px;
+	}
+
+	.skills {
+		margin-bottom: 40px;
+	}
+
+	.photos {
+		flex-wrap: wrap;
+    	justify-content: center;
+	}
+
+	.photos__pic {
+		margin: 15px;
+	}
+
+	.portfolio {
+		margin-bottom: 64px;
+	}
+	
+	.footer p {
+		text-align: center;
+	}
+
+}
+
+/* Small 576px - 768px */
+@media screen and (max-width: 768px) {
+	.header {
+		padding-top: 30px;
+		padding-bottom: 65px;
+	}
+
+	.container {
+		width: 520px;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu__logo {
+		margin-bottom: 20px;
+	}
+
+	.menu__items {
+		width: 350px;
+		margin-bottom: 15px;
+	}
+
+	.menu__item {
+		font-size: 14px;
+	}
+
+	.lifestyle {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+
+	.lifestyle__title {
+    	font-size: 35px;
+	}
+
+	.lifestyle__text {
+   	 	font-size: 25px;
+	}
+
+	.skills h2 {
+   		margin-top: 60px;
+	}
+
+	.list {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.list__item {
+		width: 50%;
+	}
+}
+
+/* Extra small 320px - 576px */
+@media screen and (max-width: 576px) {
+	h2 {
+		font-size: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.container {
+		width: 90%;
+	}
+	.header {
+		padding-bottom: 60px;
+	}
+	.menu__items {
+    	width: 290px;
+    	margin-bottom: 15px;
+	}
+	.menu__item {
+    	font-size: 14px;
+	}
+	.menu__logo{
+		font-size: 15px;
+	}
+	.menu__logo b {
+		font-size: 17px;
+	}
+	.menu__email {
+		font-size: 14px;
+		width: auto;
+	}
+	.lifestyle {
+   	 	margin-top: 120px;
+    	margin-bottom: 160px;
+	}
+
+	.lifestyle__title {
+    	font-size: 35px;
+	}
+
+	.about-me {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.about-me h2 {
+		padding-bottom: 40px;
+	}
+	.background {
+		margin-bottom: 50px;
+	}
+	.background__title {
+    	margin-bottom: 22px;
+	}
+	.backround__text {
+		padding-bottom: 20px;
+	}
+	.merits {
+		margin-bottom: 50px;
+	}
+	.merits__info {
+		flex-wrap: wrap;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+	.merits__projects {
+    	width: 50%;
+	}
+	.merits__name {
+    	font-size: 12px;
+    	font-family: 'Museo Sans 100';
+    	line-height: 1.5;
+    	text-transform: uppercase;
+    	text-align: center;
+    	margin-top: 18px;
+    	margin-bottom: 40px;
+	}
+	.contacts__info {
+    	flex-direction: column;
+	}
+	.contacts__links {
+    	width: 100%;
+    	font-size: 12px;
+    	font-family: 'Museo Sans 300';
+    	text-align: center;
+	}
+	.contacts__me {
+    	margin-top: 20px;
+    	justify-content: center;
+	}
+	.icon {
+    	font-family: 'Stroke-Gap-Icons';
+    	font-size: 15px;
+    	margin-right: 10px;
+    	color: #204d15;
+    	background: #eef1ed;
+    	border-radius: 50%;
+    	padding: 13px 12px 13px 14px;
+	}
+	.contacts__text {
+		font-size: 12px;
+	}
+	.skills h2 {
+    	margin-top: 60px;
+    	margin-bottom: 20px;
+    	padding-bottom: 0;
+	}
+	.list{
+		align-items: flex-start;
+	}
+	.list__item {
+		width: 50%;
+		margin-bottom: 60px;
+		flex-direction: column;
+	}
+
+	.list__num {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	.portfolio {
+		margin-bottom: 40px;
+	}
+	.portfolio h2 {
+    	padding-bottom: 40px;
+	}
+	.photos__img {
+		width: 100%;
+	}
+	.footer p {
+		font-size: 9px;
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.merits__projects {
+    	width: 100%;
+	}
+}
